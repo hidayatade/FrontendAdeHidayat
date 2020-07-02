@@ -40,11 +40,26 @@ const styles = StyleSheet.create({
   inputText: {
     color: 'white',
   },
-  footer: {
-    borderRadius: 25,
-    backgroundColor: 'pink',
-    marginTop: hp('-12%'),
-    height: hp('20%'),
+  buttonSaveHead: {
+    marginTop: hp('-5%'),
+    marginLeft: wp('55%'),
+  },
+  buttonBackHead: {
+    marginTop: hp('5%'),
+    marginLeft: wp('9%'),
+  },
+  buttonBack: {
+    backgroundColor: 'red',
+    width: wp('34%'),
+    borderRadius: 20,
+  },
+  buttonSave: {
+    backgroundColor: '#00e5ff',
+    width: wp('34%'),
+    borderRadius: 20,
+  },
+  buttonText: {
+    marginRight: wp('15%'),
   },
 });
 
