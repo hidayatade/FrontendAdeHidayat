@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   },
   view2: {
     width: 420,
-    height: 350,
+    height: 310,
     borderBottomLeftRadius: 55,
     borderBottomRightRadius: 55,
     borderTopRightRadius: 0,
@@ -39,12 +39,17 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   card: {
-    height: hp('60%'),
+    height: hp('50%'),
     borderTopLeftRadius: 40,
     borderTopRightRadius: 40,
     borderBottomLeftRadius: 40,
     borderBottomRightRadius: 40,
-    marginTop: 40,
+    marginTop: hp('4%'),
+    backgroundColor: 'white',
+  },
+  list: {
+    marginBottom: hp('-2%'),
+    marginTop: hp('-1%'),
   },
 });
 

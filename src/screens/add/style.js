@@ -8,25 +8,43 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: '#b2ebf2',
   },
-  card: {
-    height: hp('70%'),
-    borderTopLeftRadius: 40,
-    borderTopRightRadius: 40,
-    borderBottomLeftRadius: 40,
-    borderBottomRightRadius: 40,
-    marginTop: 90,
+  view: {
+    flex: 1,
   },
-  imageUser: {
-    marginLeft: wp('36%'),
-    marginTop: hp('-6%'),
+  view2: {
+    width: 420,
+    height: 650,
+    borderBottomLeftRadius: 55,
+    borderBottomRightRadius: 55,
+    borderTopRightRadius: 0,
+    borderTopLeftRadius: 0,
+    overflow: 'hidden',
+  },
+  image: {
+    height: 650,
+    width: 412,
+  },
+  text: {
+    color: 'white',
     fontSize: 40,
-    height: 80,
-    width: 80,
+    fontWeight: 'bold',
+    marginTop: hp('5%'),
+    textAlign: 'center',
+    justifyContent: 'center',
   },
   input: {
-    width: wp('80%'),
-    marginLeft: wp('10'),
     marginTop: hp('5%'),
+    width: wp('78%'),
+    alignSelf: 'center',
+  },
+  inputText: {
+    color: 'white',
+  },
+  footer: {
+    borderRadius: 25,
+    backgroundColor: 'pink',
+    marginTop: hp('-12%'),
+    height: hp('20%'),
   },
 });
 
