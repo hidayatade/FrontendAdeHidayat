@@ -26,17 +26,17 @@ export const stackRoutes = [
 export const bottomRoutes = [
   {
     name: 'Call',
-    icon: 'clipboard',
+    icon: 'phone',
     component: CallScreen,
   },
   {
     name: 'Contact',
-    icon: 'clipboard',
+    icon: 'users',
     component: ContactScreen,
   },
   {
     name: 'Add',
-    icon: 'clipboard',
+    icon: 'user-plus',
     component: AddScreen,
   },
 ];

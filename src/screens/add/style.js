@@ -6,7 +6,7 @@ import {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#b2ebf2',
+    backgroundColor: '#cfd8dc',
   },
   view: {
     flex: 1,
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     marginLeft: wp('55%'),
   },
   buttonBackHead: {
-    marginTop: hp('5%'),
+    marginTop: hp('7%'),
     marginLeft: wp('9%'),
   },
   buttonBack: {
