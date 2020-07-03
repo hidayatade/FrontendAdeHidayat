@@ -1,8 +1,8 @@
 import {ItemScreen, ItemPicker} from '../screens/items';
 import {HomeScreen} from '../screens/home';
 import {AddScreen} from '../screens/add';
-import {CallScreen} from '../screens/call';
-import { ContactScreen } from '../screens/contact';
+import {ProfileScreen} from '../screens/profile';
+import {ContactScreen} from '../screens/contact';
 
 export const stackRoutes = [
   {
@@ -25,9 +25,9 @@ export const stackRoutes = [
 
 export const bottomRoutes = [
   {
-    name: 'Call',
-    icon: 'phone',
-    component: CallScreen,
+    name: 'Profile',
+    icon: 'user-alt',
+    component: ProfileScreen,
   },
   {
     name: 'Contact',

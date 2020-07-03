@@ -1,23 +1,17 @@
 import React, {Component} from 'react';
-import {
-  Container,
-  Content,
-  Text,
-  Icon,
-  Footer,
-  FooterTab,
-  Button,
-} from 'native-base';
+import {Container, Content, Text, Thumbnail} from 'native-base';
 import {ImageBackground, View} from 'react-native';
 import styles from './styles';
 
-class CallScreen extends Component {
+class ProfileScreen extends Component {
   render() {
     const {navigation} = this.props;
     const image = {
       uri:
-        'https://i.pinimg.com/474x/d6/31/df/d631df9152c0f22205791747fd284aad.jpg',
+        'https://i.pinimg.com/474x/36/04/37/3604370d83e30d9e3a5e3324943ed4e5.jpg',
     };
+    const uri2 =
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRwzxa_Z-H0BUzLtKrkv8OdokUP0mo3_8iL9w&usqp=CAU';
     return (
       <Container>
         <Content style={styles.container}>
@@ -28,6 +22,9 @@ class CallScreen extends Component {
                 <Text style={styles.text2}>My name is bor</Text>
               </ImageBackground>
             </View>
+            <View style={styles.user}>
+              <Thumbnail style={styles.userImage} large source={{uri: uri2}} />
+            </View>
           </View>
         </Content>
       </Container>
@@ -35,4 +32,4 @@ class CallScreen extends Component {
   }
 }
 
-export default CallScreen;
+export default ProfileScreen;

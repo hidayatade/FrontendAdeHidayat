@@ -6,23 +6,31 @@ import {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#b2ebf2',
+    backgroundColor: 'white',
   },
   view: {
     flex: 1,
   },
   view2: {
     width: 420,
-    height: 650,
-    borderBottomLeftRadius: 55,
-    borderBottomRightRadius: 55,
+    height: hp('30%'),
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 300,
     borderTopRightRadius: 0,
     borderTopLeftRadius: 0,
     overflow: 'hidden',
   },
   image: {
-    height: 650,
+    height: hp('40%'),
     width: 412,
+  },
+  user: {
+    marginTop: hp('-8%'),
+  },
+  userImage: {
+    width: wp('32%'),
+    height: hp('15%'),
+    alignSelf: 'center',
   },
   text: {
     color: 'white',
