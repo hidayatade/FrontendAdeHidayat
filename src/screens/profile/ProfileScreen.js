@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-import {Text, Card, Body} from 'native-base';
+import {Text, Card, Body, Button} from 'native-base';
 import {View} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import {Image} from 'react-native';
+import {Col, Row, Grid} from 'react-native-easy-grid';
 import styles from './styles';
 
 class ProfileScreen extends Component {
@@ -20,16 +21,34 @@ class ProfileScreen extends Component {
           colors={['#a1c4fd', '#c2e9fb', '#43D4FF']}
           style={styles.gradient}>
           <View>
-            <Image
-              style={styles.image}
-              source={require('../../../assets/img/me.jpg')}
-            />
+            <Grid>
+              <Col>
+                <View>
+                  <Image
+                    style={styles.image}
+                    source={require('../../../assets/img/me.jpg')}
+                  />
+                </View>
+              </Col>
+              <Col>
+                <Text style={styles.textName}>ADE HIDAYAT</Text>
+                <Text style={styles.textQuote}>
+                  ``Leave thoughts that make you weak, and hold thoughts that
+                  give you strength``.
+                </Text>
+                <Button style={styles.button} rounded light>
+                  <Text>M O D I F E R P R O F I L</Text>
+                </Button>
+              </Col>
+            </Grid>
           </View>
-          <Card style={styles.card}>
-            <Body>
-              <Text>Your text here</Text>
-            </Body>
-          </Card>
+          <View>
+            <Card style={styles.card}>
+              <Body>
+                <Text style={styles.textJob}>Front End Develover</Text>
+              </Body>
+            </Card>
+          </View>
         </LinearGradient>
       </View>
     );
