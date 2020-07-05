@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
-import {Container, Content, Text, Thumbnail} from 'native-base';
-import {ImageBackground, View} from 'react-native';
+import {Text, Card, Body} from 'native-base';
+import {View} from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
+import {Image} from 'react-native';
 import styles from './styles';
 
 class ProfileScreen extends Component {
@@ -13,21 +15,23 @@ class ProfileScreen extends Component {
     const uri2 =
       'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRwzxa_Z-H0BUzLtKrkv8OdokUP0mo3_8iL9w&usqp=CAU';
     return (
-      <Container>
-        <Content style={styles.container}>
-          <View style={styles.view}>
-            <View style={styles.view2}>
-              <ImageBackground source={image} style={styles.image}>
-                <Text style={styles.text}>Call</Text>
-                <Text style={styles.text2}>My name is bor</Text>
-              </ImageBackground>
-            </View>
-            <View style={styles.user}>
-              <Thumbnail style={styles.userImage} large source={{uri: uri2}} />
-            </View>
+      <View style={styles.container}>
+        <LinearGradient
+          colors={['#a1c4fd', '#c2e9fb', '#43D4FF']}
+          style={styles.gradient}>
+          <View>
+            <Image
+              style={styles.image}
+              source={require('../../../assets/img/me.jpg')}
+            />
           </View>
-        </Content>
-      </Container>
+          <Card style={styles.card}>
+            <Body>
+              <Text>Your text here</Text>
+            </Body>
+          </Card>
+        </LinearGradient>
+      </View>
     );
   }
 }

@@ -6,51 +6,22 @@ import {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'white',
-  },
-  view: {
     flex: 1,
   },
-  view2: {
-    width: 420,
-    height: hp('30%'),
-    borderBottomLeftRadius: 0,
-    borderBottomRightRadius: 300,
-    borderTopRightRadius: 0,
-    borderTopLeftRadius: 0,
-    overflow: 'hidden',
+  gradient: {
+    flex: 1,
   },
   image: {
-    height: hp('40%'),
-    width: 412,
+    width: 130,
+    height: 130,
+    borderRadius: 130 / 2,
+    marginTop: hp('13%'),
+    marginLeft: hp('3%'),
   },
-  user: {
-    marginTop: hp('-8%'),
-  },
-  userImage: {
-    width: wp('32%'),
-    height: hp('15%'),
-    alignSelf: 'center',
-  },
-  text: {
-    color: 'white',
-    fontSize: 40,
-    fontWeight: 'bold',
-    marginTop: hp('20'),
-    textAlign: 'center',
-    justifyContent: 'center',
-  },
-  text2: {
-    color: 'white',
-    fontSize: 16,
-    textAlign: 'center',
-    justifyContent: 'center',
-  },
-  footer: {
-    borderRadius: 25,
-    backgroundColor: 'pink',
-    marginTop: hp('-12%'),
-    height: hp('20%'),
+  card: {
+    height: hp('62%'),
+    marginTop: hp('5%'),
+    borderTopRightRadius: 150,
   },
 });
 
