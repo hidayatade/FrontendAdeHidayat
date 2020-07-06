@@ -64,6 +64,14 @@ const styles = StyleSheet.create({
   buttonText: {
     marginRight: wp('15%'),
   },
+  iconInput: {
+    fontSize: 25,
+    paddingRight: wp('3%'),
+  },
+  iconButton: {
+    fontSize: 25,
+    marginLeft: wp('5%'),
+  },
 });
 
 export default styles;
