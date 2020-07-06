@@ -5,6 +5,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import {Image} from 'react-native';
 import {Col, Row, Grid} from 'react-native-easy-grid';
 import styles from './styles';
+import {ScrollView} from 'react-native-gesture-handler';
 
 class ProfileScreen extends Component {
   render() {
@@ -47,6 +48,90 @@ class ProfileScreen extends Component {
               <Body>
                 <Text style={styles.textJob}>Front End Develover</Text>
               </Body>
+              <View style={styles.scroll}>
+                <ScrollView>
+                  <View>
+                    <Grid>
+                      <Col>
+                        <View>
+                          <Image
+                            style={styles.imageJob}
+                            source={require('../../../assets/img/1.jpg')}
+                          />
+                        </View>
+                      </Col>
+                      <Col>
+                        <View>
+                          <Image
+                            style={styles.imageJob}
+                            source={require('../../../assets/img/2.jpg')}
+                          />
+                        </View>
+                      </Col>
+                    </Grid>
+                  </View>
+                  <View>
+                    <Grid>
+                      <Col>
+                        <View>
+                          <Image
+                            style={styles.imageJob}
+                            source={require('../../../assets/img/3.jpg')}
+                          />
+                        </View>
+                      </Col>
+                      <Col>
+                        <View>
+                          <Image
+                            style={styles.imageJob}
+                            source={require('../../../assets/img/4.jpg')}
+                          />
+                        </View>
+                      </Col>
+                    </Grid>
+                  </View>
+                  <View>
+                    <Grid>
+                      <Col>
+                        <View>
+                          <Image
+                            style={styles.imageJob}
+                            source={require('../../../assets/img/5.jpg')}
+                          />
+                        </View>
+                      </Col>
+                      <Col>
+                        <View>
+                          <Image
+                            style={styles.imageJob}
+                            source={require('../../../assets/img/6.jpg')}
+                          />
+                        </View>
+                      </Col>
+                    </Grid>
+                  </View>
+                  <View>
+                    <Grid>
+                      <Col>
+                        <View>
+                          <Image
+                            style={styles.imageJob}
+                            source={require('../../../assets/img/7.jpg')}
+                          />
+                        </View>
+                      </Col>
+                      <Col>
+                        <View>
+                          <Image
+                            style={styles.imageJob}
+                            source={require('../../../assets/img/8.jpg')}
+                          />
+                        </View>
+                      </Col>
+                    </Grid>
+                  </View>
+                </ScrollView>
+              </View>
             </Card>
           </View>
         </LinearGradient>

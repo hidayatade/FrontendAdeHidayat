@@ -52,6 +52,17 @@ const styles = StyleSheet.create({
     color: '#8d6e63',
     opacity: 0.6,
   },
+  imageJob: {
+    width: 170,
+    height: 110,
+    borderRadius: 20,
+    marginLeft: hp('2%'),
+    marginTop: hp('5%'),
+    marginBottom: hp('1%'),
+  },
+  scroll: {
+    marginTop: hp('10%'),
+  },
 });
 
 export default styles;
