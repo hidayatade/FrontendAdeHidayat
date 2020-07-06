@@ -19,7 +19,7 @@ class ProfileScreen extends Component {
     return (
       <View style={styles.container}>
         <LinearGradient
-          colors={['#a1c4fd', '#c2e9fb', '#43D4FF']}
+          colors={['#74ebd5', '#ACB6E5', '#43D4FF']}
           style={styles.gradient}>
           <View>
             <Grid>
