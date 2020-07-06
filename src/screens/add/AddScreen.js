@@ -1,15 +1,7 @@
 import React, {Component} from 'react';
-import {
-  Container,
-  Content,
-  Text,
-  Item,
-  Icon,
-  Input,
-  Label,
-  Button,
-} from 'native-base';
+import {Text, Item, Icon, Input, Label, Button} from 'native-base';
 import {ImageBackground, View} from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 import styles from './style';
 
 class AddScreen extends Component {
@@ -17,11 +9,13 @@ class AddScreen extends Component {
     const {navigation} = this.props;
     const image = {
       uri:
-        'https://i.pinimg.com/474x/96/57/38/96573826d6d1346e92463a4cacd058c9.jpg',
+        'https://i.pinimg.com/474x/04/50/d1/0450d1ddf24d030ad0f6905b213ed150.jpg',
     };
     return (
-      <Container>
-        <Content style={styles.container}>
+      <View style={styles.container}>
+        <LinearGradient
+          colors={['#4C5AB6', '#44444C', '#f2fcfe']}
+          style={styles.gradient}>
           <View style={styles.view}>
             <View style={styles.view2}>
               <ImageBackground source={image} style={styles.image}>
@@ -69,8 +63,8 @@ class AddScreen extends Component {
               </ImageBackground>
             </View>
           </View>
-        </Content>
-      </Container>
+        </LinearGradient>
+      </View>
     );
   }
 }

@@ -6,7 +6,10 @@ import {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#cfd8dc',
+    flex: 1,
+  },
+  gradient: {
+    flex: 1,
   },
   view: {
     flex: 1,

@@ -43,7 +43,10 @@ const styles = StyleSheet.create({
     width: wp('50%'),
     marginTop: hp('1%'),
     marginLeft: wp('-5%'),
-    opacity: 0.2,
+    opacity: 0.5,
+  },
+  buttonText: {
+    color: '#22c1c3',
   },
   textJob: {
     fontWeight: 'bold',

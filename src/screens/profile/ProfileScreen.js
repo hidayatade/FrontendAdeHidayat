@@ -38,7 +38,9 @@ class ProfileScreen extends Component {
                   give you strength``.
                 </Text>
                 <Button style={styles.button} rounded light>
-                  <Text>M O D I F E R P R O F I L</Text>
+                  <Text style={styles.buttonText}>
+                    M O D I F E R P R O F I L
+                  </Text>
                 </Button>
               </Col>
             </Grid>

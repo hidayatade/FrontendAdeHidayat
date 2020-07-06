@@ -6,7 +6,10 @@ import {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#b2ebf2',
+    flex: 1,
+  },
+  gradient: {
+    flex: 1,
   },
   view: {
     flex: 1,
@@ -39,17 +42,20 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   card: {
-    height: hp('50%'),
+    height: hp('55%'),
     borderTopLeftRadius: 40,
     borderTopRightRadius: 40,
     borderBottomLeftRadius: 40,
     borderBottomRightRadius: 40,
-    marginTop: hp('4%'),
+    marginTop: hp('45%'),
     backgroundColor: 'white',
   },
   list: {
     marginBottom: hp('-2%'),
-    marginTop: hp('-1%'),
+    marginTop: hp('1%'),
+  },
+  scroll: {
+    marginTop: hp('1%'),
   },
 });
 
