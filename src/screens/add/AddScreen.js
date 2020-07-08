@@ -66,7 +66,10 @@ class AddScreen extends Component {
                   </Item>
                 </View>
                 <View style={styles.buttonBackHead}>
-                  <Button iconLeft style={styles.buttonBack}>
+                  <Button
+                    iconLeft
+                    style={styles.buttonBack}
+                    onPress={() => this.props.navigation.navigate('Profile')}>
                     <FontAwesome style={styles.iconButton} name="arrow-left" />
                     <Text style={styles.buttonText}>Back</Text>
                   </Button>

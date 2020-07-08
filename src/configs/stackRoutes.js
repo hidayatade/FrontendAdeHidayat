@@ -1,4 +1,3 @@
-import {ItemScreen, ItemPicker} from '../screens/items';
 import {HomeScreen} from '../screens/home';
 import {AddScreen} from '../screens/add';
 import {ProfileScreen} from '../screens/profile';
@@ -12,14 +11,6 @@ export const stackRoutes = [
   {
     name: 'Add',
     component: AddScreen,
-  },
-  {
-    name: 'ItemDetail',
-    component: ItemScreen,
-  },
-  {
-    name: 'ItemPicker',
-    component: ItemPicker,
   },
 ];
 

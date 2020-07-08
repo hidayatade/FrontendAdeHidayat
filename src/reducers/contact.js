@@ -1,35 +1,35 @@
 import {
-  SAVE_ITEM_REQUEST,
-  SAVE_ITEM_SUCCESS,
-  SAVE_ITEM_FAILURE,
-  DELETE_ITEM_REQUEST,
-  DELETE_ITEM_SUCCESS,
-  DELETE_ITEM_FAILURE,
-  FIND_ITEM_REQUEST,
-  FIND_ITEM_SUCCESS,
-  FIND_ITEM_FAILURE,
-  FIND_ITEMS_REQUEST,
-  FIND_ITEMS_SUCCESS,
-  FIND_ITEMS_FAILURE,
+  SAVE_CONTACT_REQUEST,
+  SAVE_CONTACT_SUCCESS,
+  SAVE_CONTACT_FAILURE,
+  DELETE_CONTACT_REQUEST,
+  DELETE_CONTACT_SUCCESS,
+  DELETE_CONTACT_FAILURE,
+  FIND_CONTACT_REQUEST,
+  FIND_CONTACT_SUCCESS,
+  FIND_CONTACT_FAILURE,
+  FIND_CONTACTS_REQUEST,
+  FIND_CONTACTS_SUCCESS,
+  FIND_CONTACTS_FAILURE,
 } from '../actions/constanst';
 
 const defaultState = {data: null, loading: false, error: null};
 
-export function savedItem(state = defaultState, action) {
+export function savedContact(state = defaultState, action) {
   switch (action.type) {
-    case SAVE_ITEM_REQUEST:
+    case SAVE_CONTACT_REQUEST:
       return {
         ...state,
         loading: true,
         error: null,
       };
-    case SAVE_ITEM_SUCCESS:
+    case SAVE_CONTACT_SUCCESS:
       return {
         data: action.data,
         loading: false,
         error: null,
       };
-    case SAVE_ITEM_FAILURE:
+    case SAVE_CONTACT_FAILURE:
       return {
         ...state,
         loading: false,
@@ -40,23 +40,23 @@ export function savedItem(state = defaultState, action) {
   }
 }
 
-export function deleteItemById(state = defaultState, action) {
+export function deleteContactById(state = defaultState, action) {
   console.log('#reducers data', action.data);
 
   switch (action.type) {
-    case DELETE_ITEM_REQUEST:
+    case DELETE_CONTACT_REQUEST:
       return {
         ...state,
         loading: true,
         error: null,
       };
-    case DELETE_ITEM_SUCCESS:
+    case DELETE_CONTACT_SUCCESS:
       return {
         data: action.data,
         loading: false,
         error: null,
       };
-    case DELETE_ITEM_FAILURE:
+    case DELETE_CONTACT_FAILURE:
       return {
         ...state,
         loading: false,
@@ -67,21 +67,21 @@ export function deleteItemById(state = defaultState, action) {
   }
 }
 
-export function itemById(state = defaultState, action) {
+export function contactById(state = defaultState, action) {
   switch (action.type) {
-    case FIND_ITEM_REQUEST:
+    case FIND_CONTACT_REQUEST:
       return {
         ...state,
         loading: true,
         error: null,
       };
-    case FIND_ITEM_SUCCESS:
+    case FIND_CONTACT_SUCCESS:
       return {
         data: action.data,
         loading: false,
         error: null,
       };
-    case FIND_ITEM_FAILURE:
+    case FIND_CONTACT_FAILURE:
       return {
         ...state,
         loading: false,
@@ -92,21 +92,21 @@ export function itemById(state = defaultState, action) {
   }
 }
 
-export function items(state = defaultState, action) {
+export function contacts(state = defaultState, action) {
   switch (action.type) {
-    case FIND_ITEMS_REQUEST:
+    case FIND_CONTACTS_REQUEST:
       return {
         ...state,
         loading: true,
         error: null,
       };
-    case FIND_ITEMS_SUCCESS:
+    case FIND_CONTACTS_SUCCESS:
       return {
         data: action.data,
         loading: false,
         error: null,
       };
-    case FIND_ITEMS_FAILURE:
+    case FIND_CONTACTS_FAILURE:
       return {
         ...state,
         loading: false,

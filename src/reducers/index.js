@@ -1,8 +1,13 @@
 import {combineReducers} from 'redux';
-import {savedItem, deleteItemById, itemById, items} from './items';
+import {
+  savedContact,
+  deleteContactById,
+  contactById,
+  contacts,
+} from './contact';
 export default combineReducers({
-  savedItem,
-  itemById,
-  items,
-  deleteItemById,
+  savedContact,
+  contactById,
+  contacts,
+  deleteContactById,
 });

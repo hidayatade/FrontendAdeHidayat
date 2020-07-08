@@ -1,16 +1,16 @@
 import {all, fork} from 'redux-saga/effects';
 import {
-  watchSaveItem,
+  watchSaveContact,
   watchDeleteById,
   watchFindById,
-  watchFindAllItems,
-} from './items';
+  watchFindAllContacts,
+} from './contact';
 
 export default function* rootSaga() {
   yield all([
-    fork(watchFindAllItems),
+    fork(watchFindAllContacts),
     fork(watchFindById),
-    fork(watchSaveItem),
+    fork(watchSaveContact),
     fork(watchDeleteById),
   ]);
 }

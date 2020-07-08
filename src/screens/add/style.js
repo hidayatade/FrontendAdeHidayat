@@ -71,6 +71,7 @@ const styles = StyleSheet.create({
   iconButton: {
     fontSize: 25,
     marginLeft: wp('5%'),
+    color: 'white',
   },
 });
 

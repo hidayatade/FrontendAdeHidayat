@@ -6,7 +6,7 @@ import {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#b2ebf2',
+    backgroundColor: 'pink',
   },
   view: {
     flex: 1,
@@ -32,19 +32,13 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     justifyContent: 'center',
   },
-  text2: {
-    color: 'white',
-    fontSize: 16,
-    textAlign: 'center',
-    justifyContent: 'center',
-  },
   tabBarLabel: {
     paddingBottom: 6,
     fontSize: 10,
     textAlign: 'center',
   },
   tabBarLabelActive: {
-    color: '#9000D3',
+    color: 'pink',
   },
   icon: {
     backgroundColor: 'transparent',
@@ -59,8 +53,9 @@ const styles = StyleSheet.create({
     fontFamily: 'roboto-regular',
   },
   activeIcon: {
-    color: '#9000D3',
+    color: '#00e5ff',
     fontSize: 25,
+    opacity: 0.4,
   },
   activeButtonText: {
     color: '#9000D3',

@@ -40,7 +40,6 @@ const tabBarLabel = (focused, title) => {
 export default function Main(props) {
   return (
     <Tab.Navigator
-      initialRouteName="Login"
       shifting={true}
       inactiveColor={styles.buttonText.color}
       activeColor={styles.activeButtonText.color}
