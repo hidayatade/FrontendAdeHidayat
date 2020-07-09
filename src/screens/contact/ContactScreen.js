@@ -25,8 +25,10 @@ function Contacts({onPress, item}) {
         />
       </Left>
       <Body>
-        <Text>{item.firstName}</Text>
-        <Text>{item.lastName}</Text>
+        <Text>
+          {item.firstName} {item.lastName}
+        </Text>
+        <Text>{item.age}</Text>
         <Text note>Doing what you like will always keep you happy . .</Text>
       </Body>
       <Right>

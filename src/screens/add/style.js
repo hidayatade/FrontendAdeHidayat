@@ -23,54 +23,73 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 0,
     overflow: 'hidden',
   },
+  cardHead: {
+    marginTop: hp('20%'),
+  },
+  card: {
+    height: hp('62%'),
+    width: wp('92%'),
+    alignSelf: 'center',
+    borderRadius: 25,
+  },
   image: {
-    height: 650,
-    width: 412,
-  },
-  text: {
-    color: 'white',
-    fontSize: 40,
-    fontWeight: 'bold',
-    marginTop: hp('5%'),
-    textAlign: 'center',
-    justifyContent: 'center',
-  },
-  input: {
-    marginTop: hp('5%'),
-    width: wp('78%'),
+    width: 120,
+    height: 120,
+    borderRadius: 120 / 2,
+    marginTop: hp('-8%'),
     alignSelf: 'center',
   },
-  inputText: {
-    color: 'white',
+  contact: {
+    alignSelf: 'center',
   },
-  buttonSaveHead: {
-    marginTop: hp('-5%'),
-    marginLeft: wp('55%'),
+  textContact: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#6d4c41',
+    opacity: 0.5,
+    marginTop: hp('1%'),
   },
-  buttonBackHead: {
-    marginTop: hp('7%'),
-    marginLeft: wp('9%'),
+  line: {
+    borderBottomColor: 'pink',
+    borderBottomWidth: 1,
+    marginTop: hp('1%'),
+    opacity: 0.5,
   },
-  buttonBack: {
-    backgroundColor: 'red',
-    width: wp('34%'),
-    borderRadius: 20,
+  inputHeadOne: {
+    marginTop: hp('3%'),
+  },
+  inputHead: {
+    marginTop: hp('3%'),
+  },
+  input: {
+    width: wp('85%'),
+    alignSelf: 'center',
+  },
+  icon: {
+    fontSize: 20,
   },
   buttonSave: {
-    backgroundColor: '#00e5ff',
-    width: wp('34%'),
-    borderRadius: 20,
+    marginTop: hp('7%'),
+    width: wp('60%'),
+    marginLeft: wp('-3%'),
+    borderRadius: 10,
+    textAlign: 'center',
+    alignSelf: 'center',
   },
-  buttonText: {
-    marginRight: wp('15%'),
+  buttonTextSave: {
+    justifyContent: 'center',
+    marginLeft: wp('18%'),
+    fontWeight: 'bold',
   },
-  iconInput: {
-    fontSize: 25,
-    paddingRight: wp('3%'),
-  },
-  iconButton: {
-    fontSize: 25,
+  buttonBack: {
+    marginTop: hp('7%'),
+    width: wp('20%'),
     marginLeft: wp('5%'),
+    borderRadius: 10,
+  },
+  iconBack: {
+    fontSize: 25,
+    marginLeft: wp('3%'),
     color: 'white',
   },
 });
