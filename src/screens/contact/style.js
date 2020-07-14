@@ -54,8 +54,12 @@ const styles = StyleSheet.create({
     marginBottom: hp('-2%'),
     marginTop: hp('1%'),
   },
+  listBody: {
+    paddingBottom: hp('2%'),
+  },
   scroll: {
     marginTop: hp('1%'),
+    marginBottom: hp('6%'),
   },
 });
 

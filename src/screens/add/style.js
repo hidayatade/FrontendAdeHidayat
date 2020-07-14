@@ -68,6 +68,11 @@ const styles = StyleSheet.create({
   icon: {
     fontSize: 20,
   },
+  textInput: {
+    marginLeft: wp('2%'),
+    opacity: 0.8,
+    color: '#009688',
+  },
   buttonSave: {
     marginTop: hp('7%'),
     width: wp('60%'),

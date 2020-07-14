@@ -10,13 +10,20 @@ import {
   Grid,
   Col,
 } from 'native-base';
-import {ImageBackground, View} from 'react-native';
+import {View, Image} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import FontAwesome from 'react-native-vector-icons/FontAwesome5';
-import {Image} from 'react-native';
+import {ImagePicker} from 'react-native-image-picker';
 import styles from './style';
 
 class AddScreen extends Component {
+  handleChoosePhoto = () => {
+    const options = {};
+    ImagePicker.launchImageLibrary(options, response => {
+      console.log('response', response);
+    });
+  };
+
   render() {
     const {navigation} = this.props;
     const image = {
@@ -48,7 +55,10 @@ class AddScreen extends Component {
                           active
                           name="user-plus"
                         />
-                        <Input placeholder="First name" />
+                        <Input
+                          style={styles.textInput}
+                          placeholder="First name"
+                        />
                       </Item>
                     </View>
                     <View style={styles.inputHead}>
@@ -58,7 +68,10 @@ class AddScreen extends Component {
                           active
                           name="user-plus"
                         />
-                        <Input placeholder="Last name" />
+                        <Input
+                          style={styles.textInput}
+                          placeholder="Last name"
+                        />
                       </Item>
                     </View>
                     <View style={styles.inputHead}>
@@ -68,7 +81,7 @@ class AddScreen extends Component {
                           active
                           name="algolia"
                         />
-                        <Input placeholder="Age" />
+                        <Input style={styles.textInput} placeholder="Age" />
                       </Item>
                     </View>
                   </View>

@@ -24,12 +24,12 @@ function Contacts({onPress, item}) {
           }}
         />
       </Left>
-      <Body>
+      <Body style={styles.listBody}>
         <Text>
           {item.firstName} {item.lastName}
         </Text>
         <Text>{item.age}</Text>
-        <Text note>Doing what you like will always keep you happy . .</Text>
+        <Text note>Doing what you like will</Text>
       </Body>
       <Right>
         <Text note>3:43 pm</Text>
